@@ -13,10 +13,10 @@ class Mascota:
         print("luego de la reparppadora siesta su energia es de : " + str(self.energia))
         return self
     def comer(self):
-        print("la energia de tu mascota esta en : " + str(self.energia) + "y su salud en : " + str(self.salud))
+        print("la energia de tu mascota esta en : " + str(self.energia) + " y su salud en : " + str(self.salud))
         self.energia += 5
         self.salud += 10
-        print("luego de alimentarse su energia es de : " + str(self.energia) + "y su salud de :" + str(self.salud))
+        print("luego de alimentarse su energia es de : " + str(self.energia) + " y su salud de :" + str(self.salud))
         return self
     def jugar(self):
         print("tu mascota esta desanimada su salud es de : " + str(self.salud))
@@ -28,6 +28,12 @@ class Mascota:
         sonidito_random = random.choice(self.ruido)
         print(sonidito_random)
 
+class Mininos(Mascota):
+    def __init__(self, nombre):
+        habilidades_luna = ['mauyido','ver_espiritus']
+        super().__init__(nombre, "fuego", habilidades_luna, "prrr" )
+
 mis_habilidades = ['impaktrueno', 'placaje', 'salpicadura']
 ruiditos = ['grrrr', 'miaaauuu', 'waf', 'sido Chesto']
+luna = Mininos("luna")
 mitens = Mascota("mittens", "trueno", mis_habilidades, ruiditos)

@@ -28,4 +28,5 @@ mi_comida_mascota = ['pizza','hamburguesa','pastelito','completo']
 ninjaOcre = Ninja("ninja", "Ocre", mascota.mitens, mis_premios, mi_comida_mascota)
 ninjaOcre.caminar()
 ninjaOcre.alimentar()
+ninjaOcre.alimentar()
 ninjaOcre.bañar()
